@@ -4,7 +4,7 @@ public abstract class Book {
 	public double Price;
 
 	
-		public  abstract void setPrice();
+		public abstract void setPrice();
 		
 		public double getPrice(){
 			return Price;
@@ -14,20 +14,20 @@ public abstract class Book {
 			return Title;
 		}
 		
-		public void setTitle(String title) {
-			Title = title;
+		public void setTitle(String t) {
+			Title = t;
 		}
 		
 		public Book() {
-			System.out.println("inside default constructor");
-			//this.Title = title;
-			//this.Price = price;
+			//System.out.println("inside default constructor");
+			this.getPrice();
+			this.getTitle();
 		}
 		
 		public Book(String title){
 		
-			getPrice();
-			System.out.println("inside title constructor");
+			this.getPrice();
+			//System.out.println("inside title constructor");
 		}
 		
 		
